@@ -6,7 +6,7 @@ var specialCharArr =[ "+", "-", "&&", "||", "!", "(", ")", "{", "}", "[", "]", "
 
 function generatePassword (){
   var passwordLength = prompt ("How many characters do you want to generate?")
-  console.log(passwordLength)
+  // console.log(passwordLength)
   while(passwordLength < 8 || passwordLength > 128){
     alert ("Please enter a valid password length 8-128")
    passwordLength = prompt ("Please enter how many characters you want to generate.")
@@ -15,7 +15,7 @@ function generatePassword (){
   var upperCaseCond= prompt ("Would you like to add uppercase letters to your password?")
   if (upperCaseCond=== "yes" || upperCaseCond=== "YES" || upperCaseCond=== "Y" || upperCaseCond=== "y" || upperCaseCond==="Yes"){
     userChoiceArr = userChoiceArr.concat(upperCaseArr)  
-    console.log (userChoiceArr)
+    // console.log (userChoiceArr)
   }
   else{
     var areYousure= prompt("Are you sure you don't want to add uppercase letters to your password?")
@@ -25,13 +25,13 @@ function generatePassword (){
     else{
       alert ("Adding uppercase letters to your password")
       userChoiceArr = userChoiceArr.concat(upperCaseArr)  
-      console.log (userChoiceArr)
+      // console.log (userChoiceArr)
     }
   }
   var lowerCaseCond= prompt ("Would you like to add lowercase letters to your password?")
   if (lowerCaseCond=== "yes" || lowerCaseCond=== "YES" || lowerCaseCond=== "Y" || lowerCaseCond=== "y" || lowerCaseCond==="Yes"){
     userChoiceArr = userChoiceArr.concat(lowerCaseArr)  
-    console.log (userChoiceArr)
+    // console.log (userChoiceArr)
   }
     else{
      var areYousure= prompt ("Are you sure you don't want to add lowercase letters to your password?")
@@ -41,13 +41,13 @@ function generatePassword (){
     else{
       alert ("Adding lowercase letters to your password")
      userChoiceArr = userChoiceArr.concat(lowerCaseArr)
-     console.log (userChoiceArr)
+    //  console.log (userChoiceArr)
   }
 }
   var numbersCond= prompt ("Would you like to add numbers to your password?")
   if (numbersCond=== "yes" || numbersCond=== "YES" || numbersCond=== "Y" || numbersCond=== "y" || numbersCond==="Yes"){
     userChoiceArr = userChoiceArr.concat(numbersArr)  
-    console.log (userChoiceArr)
+    // console.log (userChoiceArr)
   }
     else{
       var areYousure= prompt ("Are you sure you want to add numbers to your password?")
@@ -57,13 +57,13 @@ function generatePassword (){
       else{
         alert ("Adding numbers to your password")
         userChoiceArr = userChoiceArr.concat(numbersArr)
-        console.log (userChoiceArr)
+        // console.log (userChoiceArr)
       }
     }
   var specialCharCond= prompt ("Would you like to add special characters to your password?")
   if (specialCharCond=== "yes" || specialCharCond=== "YES" || specialCharCond=== "Y" || specialCharCond=== "y" || specialCharCond==="Yes"){
     userChoiceArr = userChoiceArr.concat(specialCharArr)  
-    console.log (userChoiceArr)
+    // console.log (userChoiceArr)
   }
   else {
     var areYousure=prompt ("Are you sure you don't want to add special characters to your password?")
@@ -73,7 +73,7 @@ function generatePassword (){
     else{
       alert ("Adding special characters to your password")
       userChoiceArr = userChoiceArr.concat(numbersArr)
-      console.log (userChoiceArr) 
+      // console.log (userChoiceArr) 
     }
   }
   var generatedPassword =""
