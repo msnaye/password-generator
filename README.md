@@ -31,7 +31,7 @@
  - Font Awesome
 
 ## Image of Website
-![portfolio screenshot](./Assets/images/Password Gen.png)
+![portfolio screenshot](./Assets/images/PasswordGen.png)
 
  ## Live Website
 https://msnaye.github.io/password-generator/
