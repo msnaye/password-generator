@@ -28,9 +28,6 @@ function generatePassword (){
       console.log (userChoiceArr)
     }
   }
-
-
-
   var lowerCaseCond= prompt ("Would you like to add lowercase letters to your password?")
   if (lowerCaseCond=== "yes" || lowerCaseCond=== "YES" || lowerCaseCond=== "Y" || lowerCaseCond=== "y" || lowerCaseCond==="Yes"){
     userChoiceArr = userChoiceArr.concat(lowerCaseArr)  
@@ -79,6 +76,11 @@ function generatePassword (){
       console.log (userChoiceArr) 
     }
   }
+  var generatedPassword =""
+  for (var i=0; i< passwordLength; i++) {
+    generatedPassword = generatedPassword + userChoiceArr[Math.floor(Math.random()*userChoiceArr.length)]
+  }
+  return generatedPassword;
 }
 
 // Get references to the #generate element

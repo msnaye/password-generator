@@ -22,12 +22,19 @@
     WHEN the password is generated
     THEN the password is either displayed in an alert or written to the page
 
-    ## Languages
-    - HTML
-    - JavaScript
+## Languages
+- HTML
+- JavaScript
+- CSS
 
-    ## Live Website
-        https://msnaye.github.io/password-generator/
+## Extensions
+ - Font Awesome
+
+## Image of Website
+![portfolio screenshot](./Assets/images/Password Gen.png)
+
+ ## Live Website
+https://msnaye.github.io/password-generator/
 
 
 
